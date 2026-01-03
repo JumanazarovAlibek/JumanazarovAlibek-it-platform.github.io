@@ -8,7 +8,7 @@
 </head>
 <body>
       <header class="header">
-  <div class="logo">EDU</div>
+  <div class="logo">IT platform</div>
 
   <nav class="nav">
     <ul class="nav-links" id="navLinks">
@@ -17,8 +17,6 @@
       <li><a href="#courses">Kurslar</a></li>
       <li><a href="#contact">Aloqa</a></li>
     </ul>
-
-    <!-- Hamburger -->
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
@@ -29,13 +27,18 @@
 
     <main class="container">
      <section class="home" id="home">
-        <h1>IT platformasiga hush kelibsiz!</h1>
+          <h1>IT platformasiga hush kelibsiz!</h1>
         <p>Ushbu platforma orqali o'z bilimlaringizni yaxshilashingiz mumkin.</p>
         <button class="btn1" id="btn1" onclick="goToSection('courses')">Kurslarimiz</button>
      </section>
      <section class="about" id="about">
-        <h1>Biz haqimizda</h1>
+      <div class="image">
+        <img src="./IT-park.png" alt="">
+      </div>
+       <div class="texts">
+         <h1>Biz haqimizda</h1>
         <p>Biz o'z bilimlaringizni yaxshilashga yordam beruvchi platforma bo'lib, turli sohalarda kurslar taklif qilamiz. Bu kurslarda o'qib siz turli sohalarni yaxshiroq tushunib olasiz. Kurslarimiz hozircha bepul. </p>
+       </div>
      </section>
      <section class="courses" id="courses">
         <h1>Bizning kurslarimiz</h1>
@@ -81,6 +84,7 @@
         <p>&copy; 2025 Alibek Jumanazarov</p>
     </footer>
     <script src="./script.js"></script>
+    <script src="./canvas.js"></script>
    
 </body>
 </html>

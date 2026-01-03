@@ -80,23 +80,23 @@ section{
 
 .home{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     margin: 20px auto;
-    min-height: 60vh;
-  
+    min-height: 80vh;
 }
+
 
 .home h1{
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 20px;
 }
-
 .home p{
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
-
+    max-width: 600px;
 }
 
 .home .btn1{
@@ -127,14 +127,23 @@ section{
     min-height: 70vh;
 }
 
+.about .image img{
+    width: 400px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
 .about h1{
     font-size: 42px;
     margin-bottom: 20px;
+    text-align: start;
 }
 
 .about p{
     font-size: 18px;
     margin-bottom: 20px;
+    text-align: end;
 }
 
 .courses{
@@ -333,10 +342,18 @@ footer{
 
     .about h1{
         font-size: 32px;
+        text-align: center;
     }
 
     .about p{
         font-size: 16px;
+        text-align: center;
+    }
+
+    .about .image img{
+        width: 100%;
+        height: auto;
+        padding: 20px;
     }
 
     .courses{
