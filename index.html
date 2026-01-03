@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT platform</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <header class="header">
+  <div class="logo">EDU</div>
+
+  <nav class="nav">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Bosh sahifa</a></li>
+      <li><a href="#about">Haqida</a></li>
+      <li><a href="#courses">Kurslar</a></li>
+      <li><a href="#contact">Aloqa</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+    <main class="container">
+     <section class="home" id="home">
+        <h1>IT platformasiga hush kelibsiz!</h1>
+        <p>Ushbu platforma orqali o'z bilimlaringizni yaxshilashingiz mumkin.</p>
+        <button class="btn1" id="btn1" onclick="goToSection('courses')">Kurslarimiz</button>
+     </section>
+     <section class="about" id="about">
+        <h1>Biz haqimizda</h1>
+        <p>Biz o'z bilimlaringizni yaxshilashga yordam beruvchi platforma bo'lib, turli sohalarda kurslar taklif qilamiz. Bu kurslarda o'qib siz turli sohalarni yaxshiroq tushunib olasiz. Kurslarimiz hozircha bepul. </p>
+     </section>
+     <section class="courses" id="courses">
+        <h1>Bizning kurslarimiz</h1>
+        <div class="courses-list">
+            <div class="course-item">
+                <img src="./web.png" alt="">
+                <h2>Web dasturlash</h2>
+                <p>Turli turdagi saytlar yaratasiz</p>
+                <button class="btn">Kursga yozilish</button>
+            </div>
+            <div class="course-item">
+                <img src="./grafi dizayn.webp" alt="">
+                <h2>Grafik dizayn</h2>
+                <p>Turli turdagi dizaynlar yasaysiz</p>
+                <button class="btn">Kursga yozilish</button>
+        </div>
+        <div class="course-item">
+            <img src="./video tahrir.jpg" alt="">
+            <h2>Video tahrirlash</h2>
+            <p>Turli turdagi videolarni tahrirlaysiz</p>
+            <button class="btn">Kursga yozilish</button>
+        </div>
+      
+     </section>
+     <section class="contact" id="contact">
+        <h1>Bog'lanish</h1>
+       <div class="forms">
+         <div class="email-group">
+            <h2>Kontakt ma'lumotlar</h2>
+            <p>email: <a href="mailto:alibekjumanazarov2011@gmail.com">alibekjumanazarov2011@gmail.com</a></p>
+            <p>tel:<a href="tel:+998935461260">+998 93 546 12 60</a></p>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Ismingiz">
+            <input type="email" placeholder="Emailingiz">
+            <textarea placeholder="Xabaringiz"></textarea>
+            <button class="btn3">Yuborish</button>
+        </div>
+       </div>
+     </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alibek Jumanazarov</p>
+    </footer>
+    <script src="./script.js"></script>
+   
+</body>
+</html>
