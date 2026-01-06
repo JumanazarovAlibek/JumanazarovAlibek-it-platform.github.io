@@ -21,7 +21,7 @@ body{
 }
 
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +114,7 @@ section{
 
 @keyframes animateBtn1 {
     0% { transform: scale(1); background-color: #007BFF; }
-    50% { transform: scale(1.1); background-color: #0056b3; }
+    50% { transform: scale(1.05); background-color: #0056b3; }
     100% { transform: scale(1); background-color: #007BFF; }
 }
 
@@ -334,6 +334,11 @@ footer{
 
     .home p{
         font-size: 16px;
+    }
+
+    .home .btn1{
+        font-size: 16px;
+        padding: 8px 16px;
     }
 
     .about{
