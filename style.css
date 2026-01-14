@@ -78,6 +78,7 @@ section{
 
 }
 
+
 .home{
     display: flex;
     flex-direction: column;
@@ -86,6 +87,21 @@ section{
     padding: 20px;
     margin: 20px auto;
     min-height: 80vh;
+    animation: animate 1s both;
+}
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 
@@ -125,6 +141,22 @@ section{
     padding: 20px;
     margin: 20px auto;
     min-height: 70vh;
+
+    animation: animate 1s both;
+}
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 .about .image img{
@@ -154,6 +186,21 @@ section{
     margin: 20px auto;
   
     min-height: 90vh;
+    animation: animate 1s both;
+}
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 .courses-list{
@@ -220,6 +267,21 @@ section{
     padding: 20px;
     margin: 20px auto;
     min-height: 70vh;
+    animation: animate 1s both;
+}
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 .forms{

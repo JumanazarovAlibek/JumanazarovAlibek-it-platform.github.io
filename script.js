@@ -14,3 +14,4 @@ navLinks.querySelectorAll("a").forEach(link => {
 function goToSection(is){
    document.getElementById('courses').scrollIntoView({behavior:"smooth"});
 }
+
