@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.hamburger{
+   display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span{
+    width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section{
+  min-height: 80vh;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  animation: animate 1s both;
+}
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+
+.home .btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation:  animateBtn 1s infinite ;
+    margin-top: 30px;
+    
+}
+
+.home h2{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home p{
+ font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  animation: animate 1s both;
+}
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+
+.about h2{
+font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about p{
+   font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.instruction{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  animation: animate 1s both;
+}
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+
+.instruction h2{
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.href-group{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 200px;
+  margin-top: 80px;
+}
+
+.href-group a{
+  border: 2px solid #28a745;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: .5s;
+  animation: animateBtn 1s infinite ;
+}
+
+@keyframes animateBtn {
+    0% { transform: scale(1); background-color: #28a745; }
+    50% { transform: scale(1.05); background-color: #28a745; }
+    100% { transform: scale(1.01); background-color: #28a745; }
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+@media(max-width:768px){
+  .hamburger{
+    display: flex;
+  }
+  .nav-links{
+      position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: #111;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 22px;
+    transition: 0.3s ease;
+  }
+    .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .home h2{
+      font-size: 32px;
+    }
+
+    .home p{
+      font-size: 20px;
+    }
+
+    .about h2{
+      font-size: 32px;
+    }
+
+    .about p{
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .instruction h2{
+      font-size: 32px;
+      
+    }
+
+    .instruction{
+      padding: 70px;
+    }
+
+    .href-group{
+      flex-direction: column;
+      gap: 50px;
+    }
+    
+}

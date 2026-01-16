@@ -73,7 +73,23 @@ section{
     justify-content: center;
     text-align: center;
     padding: 20px;
+    animation: animate 1s both
 }
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 
 .home .btn{
     padding: 10px 20px;
@@ -113,7 +129,24 @@ section{
     justify-content: center;
     text-align: center;
     padding: 20px;
+
+    animation: animate 1s both;
 }
+
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 
 .about h2{
     font-size: 42px;
@@ -133,7 +166,22 @@ section{
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  animation: animate 1s both;
 }
+@keyframes animate {
+   from {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 
 .instruction h2{
   font-size: 48px;
@@ -224,6 +272,10 @@ footer{
       width: 100%;
     }
 
+    .instruction{
+      padding: 70px;
+    }
+
     .instruction h2{
       font-size: 32px;
     }
@@ -234,3 +286,4 @@ footer{
     }
     
 }
+
