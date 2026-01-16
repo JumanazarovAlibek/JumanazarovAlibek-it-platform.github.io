@@ -10,3 +10,7 @@ navLinks.querySelectorAll("a").forEach(link => {
         navLinks.classList.remove("active");
     });
 });
+
+function goToSection(is){
+   document.getElementById('instruction').scrollIntoView({behavior:"smooth"});
+}

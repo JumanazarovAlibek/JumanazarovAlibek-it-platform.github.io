@@ -73,6 +73,19 @@ section{
   text-align: center;
 }
 
+.home .btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation:  animateBtn 1s infinite ;
+    margin-top: 30px;
+    
+}
+
 .home h2{
   font-size: 48px;
   margin-bottom: 20px;
